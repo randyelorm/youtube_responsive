@@ -292,9 +292,10 @@ width:100%;
   
 }
 
-.pro_img {
+.pro_img_feed {
     padding: 0.4rem;
     width:3rem;
+    max-height: 3rem;
     margin: 0px;
     border-radius: 50px;
 }
