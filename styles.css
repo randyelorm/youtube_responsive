@@ -79,14 +79,14 @@ font-size:1.2rem;
 
 .Navbar_bottom {
     background-color:white;
-    display:flex;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     position:fixed;
     bottom:0px;
     width: 100%;
     max-height:30%;
     padding:1rem;
-    padding-left: 1rem;
+
 
     font-size: 1.5rem;
     border-top:1px solid #777777;
