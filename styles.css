@@ -13,9 +13,13 @@ body {
    
 }
 
+
+/* navbar */
+
 .Navbar {
     overflow-x: hidden;
-    padding: 0.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display:flex;
     justify-content: space-between;
    
@@ -31,10 +35,11 @@ color:black;
 }
 
 
-.logo-img {
-padding:0.5rem;
-max-width:100%;
-border-radius: 15px;
+.logo-icon {
+margin-top: 1.8rem;
+font-size: 2rem;
+margin-right: 0.1rem;
+
 
 
 }
@@ -42,29 +47,46 @@ border-radius: 15px;
 
 .Youtube_logo_text {
 
-  font-size: 1.6rem;
-  margin: 0px;
-  margin-top: 0.5rem;
-  margin-right: 4rem;
+    margin-top: 1.8rem;
+  font-size: 1.3rem;
+  /* margin-right: 2rem; */
+  font-family: 'Antonio', sans-serif;
+  font-weight: bold;
 
 
 
 }
 
+h5 {
+    margin: 0px;
+    margin-top: 1.1rem;
+}
+
+
+.fa-youtube {
+   color: red;
+}
  .nav_right > * {
     width: 100%;
 } 
 
 .nav_right {
-    display: flex;
-    max-width: 50%;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top:1.3rem;
+
+   
+
+    
     
 }
 
 .nav_top_icons  {
+
 color:#777777;
-font-size:1.2rem;
+font-size:1rem;
+padding:1rem;
+
  
 }
 
@@ -72,9 +94,14 @@ font-size:1.2rem;
     width:80%;
     padding:0px;
     margin: 0px;
+    display:inline-block;
     border-radius: 50px;
+
+   
 }
 
+
+/* nav-bottom */
 
 
 .Navbar_bottom {
@@ -86,8 +113,8 @@ font-size:1.2rem;
     width: 100%;
     max-height:30%;
     padding:1rem;
-
-
+    color:#444444;
+    z-index: 999;
     font-size: 1.5rem;
     border-top:1px solid #777777;
 }
@@ -112,3 +139,227 @@ font-size: 1.3rem;
     font-size: 0.8rem; 
 }
 
+
+
+/* suggestions */
+
+.suggestions {
+    display:flex;
+    justify-content: space-around;
+
+}
+
+.suggestions >  a {
+    padding: 0.2rem;
+    display: inline-block;
+    color:black;
+    text-decoration: none;
+    border:1px solid #777777;
+    border-radius: 10px;
+    background-color: #e4e7eb;
+    
+}
+
+
+
+
+.suggestions >  a:nth-of-type(1){
+
+border:1px solid #777777;
+background-color: #777777;
+}
+
+
+.suggestions >  a:nth-of-type(5) {
+    padding: 0.2rem;
+    display: inline-block;
+    color:black;
+    text-decoration: none;
+    border: none;
+    border-left:1px solid #777777;
+    border-top:1px solid #777777;
+    border-bottom:1px solid #777777;
+    border-radius: 4px;
+ 
+    
+    
+}
+
+
+
+/* ADS */
+
+.Ads {
+ 
+
+}
+
+.Ads > img {
+    width:100%;
+    padding:0.6rem;
+    padding-bottom: 0px;
+}
+
+.Ads > p {
+    margin: 0px;
+    display:flex;
+    justify-content: space-between;
+    color:#0071E3;
+    background-color:#e1f5fe;
+    padding:0.4rem;
+    margin-left:0.6rem;
+    margin-right:0.6rem;
+}
+
+.Ads > h4 {
+    margin: 0px;
+    margin-top: 0.5rem;
+    display:flex;
+    justify-content: space-between;
+    font-weight: lighter;
+    margin-left:0.6rem;
+    margin-right:0.6rem;
+}
+
+
+.Ads > h5 {
+    margin: 0px;
+    margin-top: 0.5rem;
+    color:#777777;
+    font-weight: lighter;
+    margin-left:0.6rem;
+    margin-right:0.6rem;
+}
+
+.ad_span {
+    background-color: #FCCF3E;
+    color:white;
+    border-radius: 3px;
+   
+}
+
+
+.ad_drop_up {
+    position:fixed;
+    bottom:0px;
+    z-index: 999999999;
+    width: 100%;
+    background-color: white;
+    padding:1rem;
+    display:none;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color:#444444;
+   
+}
+
+
+.ad_drop_up > div {
+    padding:1rem;
+}
+
+.ad_drop-up_icons {
+    margin-right: 1rem;
+}
+
+
+
+.checkbox1:checked ~ .ad_drop_up  {
+    display:block;
+    
+}
+
+
+
+.checkbox1 {
+    display:none;
+}
+
+
+/* first video */
+
+iframe {
+
+width:100%;
+
+
+
+    
+}
+
+.pro_img_nd_descrip{
+    display:flex;
+  
+}
+
+.pro_img {
+    padding: 0.4rem;
+    width:3rem;
+    margin: 0px;
+    border-radius: 50px;
+}
+
+
+
+.descrip1 {
+   
+
+ 
+}
+
+.descrip2 {
+    color:#777777;
+}
+
+.label {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/* .main_feed {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.main_feed > * {
+    width: 100%;
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:588px) {
+
+}
