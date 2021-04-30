@@ -23,6 +23,7 @@ body {
     display:flex;
     justify-content: space-between;
    
+   
  
    
 }
@@ -118,6 +119,9 @@ padding:1rem;
     font-size: 1.5rem;
     border-top:1px solid #777777;
 }
+
+
+
 
 
 
@@ -276,19 +280,50 @@ background-color: #777777;
 }
 
 
-/* first video */
+
+
+
+/* video box section */
+
+.videos_section {
+    max-width:800px;
+    margin: 0 auto;
+   
+}
+
+
+.videos_section1 {
+    max-width:800px;
+    margin: 0 auto;
+   
+}
+
+
+.iframe_wrapper {
+    width:100%;
+    height:0;
+    padding-bottom: 56.25%;
+    position:relative;
+
+}
 
 iframe {
-
-width:100%;
-
-
-
-    
+    position:absolute;
+    height:100%;
+    width:100%;
+  
 }
+
+
+/* first video */
+
+
+
+
 
 .pro_img_nd_descrip{
     display:flex;
+    
   
 }
 
@@ -303,39 +338,64 @@ width:100%;
 
 
 .descrip1 {
-   
+    max-width: 50%; 
 
  
 }
 
 .descrip2 {
     color:#777777;
-}
-
-.label {
-
+    max-width: 100%;
 }
 
 
 
 
-
-
-
-
-
-
-
-
- 
-/* .main_feed {
+.main_feed {
     display:flex;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.main_feed > * {
-    width: 100%;
-}  */
+
+
+/* navside */
+
+.Navbar_side {
+    display:none
+}
+
+
+ 
+
+.nav_btm_icons_query {
+    display:none;
+}
+
+.search_bar_box {
+    display:none;
+}
+
+.suggestions_query {
+    display:none
+}
+
+
+.fa-grip-lines {
+    display:none;
+}
+
+.checkbox2 {
+    display:none;
+}
+
+.side_drop {
+    display:none;
+}
+
+.fa-bars {
+    display:none
+}
 
 
 
@@ -351,16 +411,334 @@ width:100%;
 
 
 
+@media only screen  and (min-width:400px) {
+
+        .Ads {
+            display:none;
+        }
 
 
+       
 
 
+        .Ads_media {
+            display:inline;
+        }
 
 
+        .pro_img {
+            width:30%;
+            margin-top: 0.5rem;
+           
+        
+           
+        }
 
+       
 
+        
 
-
-@media screen and (min-width:588px) {
+        
 
 }
+
+
+
+
+
+@media only screen  and (min-width:740px) {
+
+    .Navbar_bottom {
+        display:none;
+    }
+
+        /* suggestions */
+
+        .suggestions {
+            display:none;
+        }
+
+
+        .suggestions_query >  a {
+            margin-left: 4rem;
+            
+        }
+
+        .suggestions_query {
+            display:flex;
+            justify-content: space-around;
+            margin-left: 4rem;
+
+        }
+
+        .suggestions_query >  a {
+            padding: 0.2rem;
+            display: inline-block;
+            color:black;
+            text-decoration: none;
+            border:1px solid #777777;
+            border-radius: 10px;
+            background-color: #e4e7eb;
+            max-width: 100%;
+            
+        }
+
+
+
+
+        .suggestions_query >  a:nth-of-type(1){
+
+        border:1px solid #777777;
+        background-color: #777777;
+        }
+
+
+        .suggestions_query >  a:nth-of-type(12) {
+            padding: 0.2rem;
+            display: inline-block;
+            color:black;
+            text-decoration: none;
+            border: none;
+            border-left:1px solid #777777;
+            border-top:1px solid #777777;
+            border-bottom:1px solid #777777;
+            border-radius: 4px;
+        
+            
+            
+        }
+
+
+        /* navbar bottom translated to side */
+
+
+         .Navbar_bottom_query {
+            position:fixed;
+            position:absolute;
+            padding-bottom: 1rem;
+            background-color: white;
+            height:100%;
+           
+            display:flex;
+            flex-direction: column;
+            z-index: 99999;
+            padding: 1rem;
+
+            
+        }
+
+
+        .nav_btm_icons_query {
+          
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            padding-bottom: 2rem;
+
+        }
+
+        .main_feed {
+            margin-left: 6.3rem;
+        }
+
+
+
+
+        /* side drop */
+
+
+        .checkbox2:checked ~ .side_drop {
+
+            display:block;
+
+        }
+
+
+        .side_drop {
+            top:11%;
+            position:fixed;
+            position:absolute;
+            padding-bottom: 1rem;
+            background-color: white;
+            height:200%;
+            display:flex;
+            flex-direction: column;
+            z-index: 999999;
+            width:15%;
+            display:none;
+            margin-left: 0px;
+           
+
+            
+        }
+
+
+        .side_drop_toggled_first_section > a {
+            color:#777777;
+            text-decoration: none;
+            display:flex;
+            
+        }
+
+        .side_drop_toggled_first_section > a > i {
+            
+            margin-right: 3rem;
+        }
+
+
+
+       
+
+      
+
+    
+        .Subscription> a > img{
+   
+            height:35px;
+            border-radius: 50%;
+         
+            margin-right: 20px;
+            margin-bottom: 20px;
+         
+        }
+
+        .Subscription > a{
+            color:#777777;
+            text-decoration: none;
+            display:inline-block;
+           
+          
+          
+        
+        }
+
+
+
+        .more_from_youtube > h5 {
+            margin-bottom: 1rem;
+        }
+
+
+        .more_from_youtube> a {
+            color:#777777;
+            text-decoration: none;
+          
+        }
+
+        .more_from_youtube  > a > i {
+            
+            margin-right: 3rem;
+        }
+
+
+
+
+        .side_drop_toggled_4th_section > a {
+            color:#777777;
+            text-decoration: none;
+        }
+
+
+        .side_drop_toggled_4th_section  > a > i {
+            
+            margin-right: 3rem;
+        }
+
+
+        .footer_links > a{
+            color:#777777;
+            text-decoration: none;
+        }
+    
+
+
+
+
+
+
+
+
+
+
+      
+
+        /* search_bar */
+        
+        .search_bar_box {
+            position: relative;
+            display:inline;
+            margin-top: 1.8rem;
+            margin-right: 17rem;
+            margin-left: 8rem;
+            margin-bottom: 0px;
+        
+        }
+
+        .search_bar {
+            width:200%;
+            height:2rem;
+
+            display:inline;
+          
+        }
+
+        .fa-microphone {
+            position: absolute;
+            left:260%;
+            top:2%;
+            font-size:1.5rem;
+           
+        }
+
+
+
+       
+
+
+
+
+
+
+        /* pro_img */
+
+        .pro_img {
+            width:20% !important;
+            margin-top: 0.9rem;
+           
+        
+           
+        }
+
+        .logo-icon {
+            margin-left: 1.5rem;
+        }
+
+
+        .fa-bars {
+          
+
+            display:inline;
+            position: absolute;
+            top:5%;
+            
+        }
+
+        .checkbox2 {
+            display:none;
+        }
+
+       
+
+        .videos_section{
+            margin-bottom: 2rem;
+            
+        }
+
+
+
+
+
+    }    
+ 
