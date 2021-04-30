@@ -283,36 +283,25 @@ background-color: #777777;
 
 
 
-/* video box section */
-
-.videos_section {
-    max-width:800px;
-    margin: 0 auto;
-   
+.iframe1 {
+    margin-left: 1rem;
+    width:101%;
 }
 
 
-.videos_section1 {
-    max-width:800px;
-    margin: 0 auto;
-   
-}
 
 
-.iframe_wrapper {
-    width:100%;
-    height:0;
-    padding-bottom: 56.25%;
-    position:relative;
 
-}
 
-iframe {
-    position:absolute;
-    height:100%;
-    width:100%;
-  
-}
+
+ .iframe_wrapper {
+  display:flex;
+  flex-direction: column;
+
+} 
+
+
+
 
 
 /* first video */
@@ -337,11 +326,7 @@ iframe {
 
 
 
-.descrip1 {
-    max-width: 50%; 
 
- 
-}
 
 .descrip2 {
     color:#777777;
@@ -591,16 +576,18 @@ iframe {
 
        
 
-      
+        .Subscription {
+            position:relative;
+        }
 
     
         .Subscription> a > img{
    
             height:35px;
             border-radius: 50%;
-         
-            margin-right: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 1rem;
+            margin-right: 1rem;
+      
          
         }
 
@@ -614,6 +601,46 @@ iframe {
         
         }
 
+        .traversy {
+            position: absolute;
+            top:12.5%;
+            
+        }
+
+
+        .two_cents {
+            position: absolute;
+            top:26.5%;
+        }
+
+
+        .apple {
+            position: absolute;
+            top:40.7%;
+        }
+
+        .liga {
+            position: absolute;
+            top:55%;
+           
+        }
+
+
+        .brownlee {
+            position: absolute;
+            top:70%;
+        }
+
+        .codecademy {
+            position: absolute;
+            top:85%;
+        }
+
+
+        .show__more_subscription_icon {
+            margin-right: 3rem;
+        }
+
 
 
         .more_from_youtube > h5 {
@@ -624,6 +651,7 @@ iframe {
         .more_from_youtube> a {
             color:#777777;
             text-decoration: none;
+          
           
         }
 
@@ -734,6 +762,34 @@ iframe {
         .videos_section{
             margin-bottom: 2rem;
             
+        }
+
+
+
+
+
+        .videos_section {
+            max-width:800px;
+            margin-right: 0 auto;
+           
+        }
+        
+        
+        
+        
+        .iframe_wrapper {
+            width:100%;
+            height:0;
+            padding-bottom: 56.25%;
+            position:relative;
+        
+        }
+        
+        iframe {
+            position:absolute;
+            height:100%;
+            width:100%;
+          
         }
 
 
